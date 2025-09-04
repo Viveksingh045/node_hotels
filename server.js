@@ -21,18 +21,7 @@ app.use('/menu', menuroutes);
 const personRoutes = require('./routes/personRoutes');
 app.use('/person', personRoutes);
 
-// app.get('/chicken' , (req, res) =>{
-//     var list = {
-//         name : 'Chicken Litti',
-//         type : 'Main Course',
-//         cuisine : 'Indian'
-//     }
-//     res.send(list)
-// })
 
-// app.get('/south', (req, res) =>{
-//     res.send('Dosa Sambhar')
-// })
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
