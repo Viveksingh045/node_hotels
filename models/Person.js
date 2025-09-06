@@ -27,9 +27,18 @@ const personSchema = new mongoose.Schema({
     address: {
         type: String,
         required: true
+    },
+    username: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    password: {
+        type: String,
+        required: true
     }
 });
 
-const Person = mongoose.model("Person", personSchema);
+const Person = mongoose.model("Person", personSchema);// Collection name: people
 
 module.exports = Person;
