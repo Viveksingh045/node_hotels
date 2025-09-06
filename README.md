@@ -1,27 +1,28 @@
 Node Hotels Backend
-
+=================================================================================================
 A simple Node.js + Express backend project for managing hotels, people, and menu items.
 It includes authentication, database models, and RESTful API routes.
 
 🚀 Features
+=================================================================================================
 User authentication (auth.js)
+
 MongoDB integration (db.js)
 
-
-
 Models for:
+=================================================================================================
 Person (models/Person.js)
+
 Menu Items (models/menuItems.js)
-
-
-
+ 
 API Routes:
+=================================================================================================
 /person (routes/personRoutes.js)
+
 /menu (routes/menuroutes.js)
 
-
-
 📂 Project Structure
+=================================================================================================
 node_hotels-main/
 │── auth.js            # Authentication logic
 │── db.js              # Database connection (MongoDB)
@@ -39,12 +40,15 @@ node_hotels-main/
 └── .gitignore
 
 ⚡ Installation & Setup
-Clone this repository
+=================================================================================================
+Clone this repository:
+
 git clone https://github.com/yourusername/node_hotels.git
 cd node_hotels-main
 
 
 Install dependencies:
+
 npm install
 
 
@@ -57,33 +61,45 @@ PORT=3000
 
 
 Run the server:
+=================================================================================================
 npm start
+
+
 Or (for development with auto-reload):
+
 npm run dev
 
-
-
 📌 API Endpoints
+=================================================================================================
 Person Routes
+
 GET /person → Get all people
+
 POST /person → Add a new person
+
 PUT /person/:id → Update a person
+
 DELETE /person/:id → Remove a person
 
-
 Menu Routes
+
 GET /menu → Get all menu items
+
 POST /menu → Add a new menu item
+
 PUT /menu/:id → Update a menu item
+
 DELETE /menu/:id → Remove a menu item
 
-
 🛠️ Tech Stack
+=================================================================================================
 Node.js + Express.js
+
 MongoDB (Mongoose ODM)
+
 JWT Authentication
 
-
-
 🤝 Contributing
+=================================================================================================
+
 Pull requests are welcome! For major changes, open an issue first to discuss what you’d like to change.
