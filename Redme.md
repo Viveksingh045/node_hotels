@@ -1,27 +1,28 @@
-Node Hotels Backend
+# Node Hotels Backend
 
-A simple Node.js + Express backend project for managing hotels, people, and menu items.
-It includes authentication, database models, and RESTful API routes.
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)  
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-brightgreen)  
+![License](https://img.shields.io/badge/License-MIT-blue)  
 
-🚀 Features
+A lightweight **REST API** built with **Node.js + Express** for managing hotel guests and menu items.  
+Includes authentication, MongoDB integration, and modular routes for easy scalability.
 
-User authentication (auth.js)
+---
+ 
 
-MongoDB integration (db.js)
+---
 
-Models for:
+## 🚀 Features
+- 🔑 **User authentication** (`auth.js`)  
+- 🗄️ **MongoDB integration** (`db.js`)  
+- 👤 **Person model** (`models/Person.js`)  
+- 🍴 **Menu Items model** (`models/menuItems.js`)  
+- 📡 **RESTful routes** for People & Menu management  
 
-Person (models/Person.js)
+---
 
-Menu Items (models/menuItems.js)
-
-API Routes:
-
-/person (routes/personRoutes.js)
-
-/menu (routes/menuroutes.js)
-
-📂 Project Structure
+## 📂 Project Structure
+```bash
 node_hotels-main/
 │── auth.js            # Authentication logic
 │── db.js              # Database connection (MongoDB)
@@ -38,28 +39,34 @@ node_hotels-main/
 │
 └── .gitignore
 
-⚡ Installation & Setup
+```
+---
+
+ ## Installation & Setup
 
 Clone this repository:
 
 git clone https://github.com/yourusername/node_hotels.git
 cd node_hotels-main
 
+---
 
-Install dependencies:
+## Install dependencies:
 
 npm install
 
+---
 
-Set up environment variables:
+## Set up environment variables:
 Create a .env file in the root and add:
 
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 PORT=3000
 
+---
 
-Run the server:
+## Run the server:
 
 npm start
 
@@ -68,7 +75,9 @@ Or (for development with auto-reload):
 
 npm run dev
 
-📌 API Endpoints
+---
+
+## 📌 API Endpoints
 Person Routes
 
 GET /person → Get all people
@@ -78,6 +87,8 @@ POST /person → Add a new person
 PUT /person/:id → Update a person
 
 DELETE /person/:id → Remove a person
+
+---
 
 Menu Routes
 
@@ -89,7 +100,9 @@ PUT /menu/:id → Update a menu item
 
 DELETE /menu/:id → Remove a menu item
 
-🛠️ Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 Node.js + Express.js
 
@@ -97,10 +110,14 @@ MongoDB (Mongoose ODM)
 
 JWT Authentication
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
 
 Pull requests are welcome! For major changes, open an issue first to discuss what you’d like to change.
 
-📜 License
+---
+
+## 📜 License
 
 This project is licensed under the MIT License.
